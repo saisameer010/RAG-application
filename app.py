@@ -24,7 +24,7 @@ load_dotenv()
 # MY_ENV_VAR = os.getenv('MY_ENV_VAR')
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)
 app.secret_key = 'your_secret_key' 
 
 ASTRA_DB_ID = os.getenv('ASTRA_DB_ID')
