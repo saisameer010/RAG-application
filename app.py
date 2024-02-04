@@ -288,4 +288,4 @@ def qna():
         load_pdf()
         return jsonify({"error": "Vector retriever not initialized"}), 404
 if __name__ == '__main__':
-    app.run(port=80)
+    app.run(debug=True)
